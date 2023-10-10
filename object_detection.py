@@ -42,11 +42,13 @@ def maptodic():
         a=menu()
         b=a[0]
         c=a[1]        
+        
         # print("a",a)
         # print("b",b)
-        print("c",c,"type",type(c))
+        # print("c",c,"type",type(c))
         # print("col dict",color_dict[b])
         # print("hsv",hsv_dict[color_dict[b]])
+        
         cv2.destroyAllWindows()
         return (hsv_dict[color_dict[b]],c)
 
@@ -107,9 +109,7 @@ def run():
                 elif key==ord("q") or key==ord("Q"):break
         
 camera=cv2.VideoCapture(0)
-print("here1")
 run()
-print("here2")
 camera.release()
 cv2.destroyAllWindows()
                      
